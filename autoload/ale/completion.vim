@@ -1021,11 +1021,11 @@ function! ale#completion#Done() abort
     let s:last_done_pos = getpos('.')[1:2]
 endfunction
 
-augroup ALECompletionActions
-    autocmd!
+" augroup ALECompletionActions
+    " autocmd!
 
-    autocmd CompleteDone * call ale#completion#HandleUserData(v:completed_item)
-augroup END
+    " autocmd CompleteDone * call ale#completion#HandleUserData(v:completed_item)
+" augroup END
 
 function! s:Setup(enabled) abort
     augroup ALECompletionGroup
